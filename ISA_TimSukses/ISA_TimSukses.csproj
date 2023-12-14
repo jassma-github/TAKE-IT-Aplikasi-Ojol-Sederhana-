@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70399A6E-F66F-4E43-8007-635595FA9D19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ISA_TimSukses</RootNamespace>
+    <AssemblyName>ISA_TimSukses</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>db.settings</DependentUpon>
+    </Compile>
+    <Compile Include="FormFoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFoto.Designer.cs">
+      <DependentUpon>FormFoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistory.Designer.cs">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLokasiDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLokasiDriver.Designer.cs">
+      <DependentUpon>FormLokasiDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPemesananDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPemesananDriver.Designer.cs">
+      <DependentUpon>FormPemesananDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPemesananUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPemesananUser.Designer.cs">
+      <DependentUpon>FormPemesananUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfil.Designer.cs">
+      <DependentUpon>FormProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSignUp.Designer.cs">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahAdmin.Designer.cs">
+      <DependentUpon>FormTambahAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTopUp.Designer.cs">
+      <DependentUpon>FormTopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUtama.Designer.cs">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerifikasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerifikasi.Designer.cs">
+      <DependentUpon>FormVerifikasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormFoto.resx">
+      <DependentUpon>FormFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHistory.resx">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLokasiDriver.resx">
+      <DependentUpon>FormLokasiDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPemesananDriver.resx">
+      <DependentUpon>FormPemesananDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPemesananUser.resx">
+      <DependentUpon>FormPemesananUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfil.resx">
+      <DependentUpon>FormProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignUp.resx">
+      <DependentUpon>FormSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahAdmin.resx">
+      <DependentUpon>FormTambahAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTopUp.resx">
+      <DependentUpon>FormTopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUtama.resx">
+      <DependentUpon>FormUtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerifikasi.resx">
+      <DependentUpon>FormVerifikasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="db.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>db.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\athlete.png" />
+    <None Include="Resources\woman1.png" />
+    <None Include="Resources\athlete1.png" />
+    <Content Include="Resources\author.png" />
+    <None Include="Resources\author1.png" />
+    <Content Include="Resources\Desain tanpa judul %281%29.png" />
+    <Content Include="Resources\man %281%29.png" />
+    <None Include="Resources\man %281%291.png" />
+    <Content Include="Resources\man.png" />
+    <None Include="Resources\man1.png" />
+    <Content Include="Resources\profile.png" />
+    <None Include="Resources\profile1.png" />
+    <Content Include="Resources\White Free Delivery Promo Instagram Post %281%29.png" />
+    <Content Include="Resources\winner.png" />
+    <None Include="Resources\winner1.png" />
+    <Content Include="Resources\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISA_LIB\ISA_LIB.csproj">
+      <Project>{0D579DAB-CE53-42F3-8F1D-59F830FDC8C2}</Project>
+      <Name>ISA_LIB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
